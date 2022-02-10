@@ -9,7 +9,6 @@ use App\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
-//use Illuminate\Validation\Validator;
 
 class AuthController extends Controller
 {
