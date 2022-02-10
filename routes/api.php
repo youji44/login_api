@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('auth/login', 'Api\\AuthController@login');
+Route::post('auth/register', 'Api\\AuthController@register');
+Route::post('auth/logout', 'Api\\AuthController@logout');
+
 
 Route::group(['middleware' => 'apiJwt'], function () {
-  Route::post('auth/logout', 'Api\\AuthController@logout');
   Route::get('users', 'Api\\UserController@index');
 });
